@@ -1,0 +1,11 @@
+.con-handle img{
+    width: 50%;
+    height: 50%;
+}
+.con-handle{
+    text-align: center;
+}
+.handleBtn{
+    border: none;
+    margin: 5px 5px;
+}

@@ -1,0 +1,30 @@
+.rider img{
+    width: 20%;
+}
+.rider{
+    background-color: whitesmoke;
+}
+.infoHighlight{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.hamim img{
+    width: 80%;
+    height: 80%;
+}
+.hamim-highlight{
+    background-color: white;
+}
+#HighlightButton{
+    background-color: red;
+    border: none;
+    margin:5% 5%;
+    color: white;
+    height: 50px;
+    width: 90%;
+    border-radius: 7px;
+}
+.map-img img{
+    width: 100%;
+}

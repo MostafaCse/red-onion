@@ -1,0 +1,48 @@
+.itemHighlight{
+    background-color: whitesmoke;
+}
+.itemHighlight img{
+    width: 100%;
+}
+.buttonHighlight
+{
+    border: none;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.boxItem{
+    margin-top: 3%;
+
+}
+#itemQuantity{
+    background-color: white;
+    font-weight: 700;
+}
+.componentReposition{
+    text-align: center;
+margin-top: 5%;
+}
+#buttonHighlight-notActive{
+  width: 400px;
+  height: 35px;
+    margin-top: 3%;
+    border: none;
+    border-radius: 5px;
+}
+.oderButton{
+    margin-top: 4%;
+    height: 35px;
+    width: 350px;
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+.oderButton-notActive{
+    margin-top: 4%;
+    height: 35px;
+    width: 350px;
+    border: none;
+    border-radius: 5px;
+}

@@ -1,0 +1,24 @@
+.highlightFooter{
+    background-color: black;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+ul li{
+    list-style: none;
+}
+ul a{
+    color: white;
+
+}
+.imgHighlight img{
+    width: 30%;
+
+}
+.footerHighlight{
+    color: grey;
+    padding-left: 20px;
+}
+.highlightFooterComponent a{
+    color: white;
+}

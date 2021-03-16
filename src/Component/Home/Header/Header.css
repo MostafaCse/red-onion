@@ -1,0 +1,47 @@
+.bgHighlight{
+    background-image: url('../../../Image/bannerbackground.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+.search-highlight{
+    text-align: center;
+    padding-top: 90px;
+}
+#input-highlight{
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 350px;
+}
+.button-highlight{
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 120px;
+    background-color: red;
+    color: whitesmoke;
+}
+.clickButtonHighlight{
+    border: none;
+    margin-right: 50px;
+}
+.buttonBox{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.itemReview{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.itemReview h1{
+    text-align: center;
+}
+.itemReview img{
+    width: 80%;
+}
+.footerPhoto img{
+    width: 100%;
+    margin-top: 60px;
+}

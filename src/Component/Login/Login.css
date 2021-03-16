@@ -1,0 +1,35 @@
+.inputHighlight{
+    width: 400px;
+    height: 40px;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+#buttonHighlight{
+    background-color: red;
+    color: white;
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-top: 15px;
+    
+}
+.highlightPhoto img{
+    width: 30%;
+}
+#googleSignIn{
+    border: none;
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 15px;
+    background-color: red;
+    color: white;
+}
+#account{
+    border: none;
+  margin-left: 250px;
+}

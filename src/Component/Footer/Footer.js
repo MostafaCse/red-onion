@@ -34,7 +34,9 @@ const Footer = () => {
                     <footer className="footerHighlight">Copyright <FontAwesomeIcon icon={faCopyright}></FontAwesomeIcon> Online food</footer>
                 </div>
                 <div style={{ marginTop: '40px' }} className="col-md-5 highlightFooterComponent d-flex justify-content-around">
-                   
+                <a href="">Privacy Policy.</a>
+                    <a href="">Terms of Use</a>
+                    <a href="">Pricing</a>
                 </div>
             </div>
         </div>

@@ -23,7 +23,7 @@ const Login = () => {
     let history = useHistory();
     let location = useLocation();
     let { from } = location.state || { from: { pathname: "/" } };
-    const { register, handleSubmit, watch, errors } = useForm();
+    const { register, handleSubmit, errors } = useForm();
 
 
     //google login
@@ -40,7 +40,7 @@ const Login = () => {
             });
 
     }
-    
+
     //email/password login
     const onSubmit = data => {
         if (formHandle) {
@@ -72,23 +72,23 @@ const Login = () => {
     return (
         <div style={{ textAlign: 'center', marginTop: '100px' }}>
             <div className="highlightPhoto">
-                <img src={logo2}></img>
+                <img src={logo2} alt=""></img>
             </div>
             <p style={{ marginTop: '2%', color: 'red' }}>{errormsg}</p>
             <form onSubmit={handleSubmit(onSubmit)}>
                 {
                     formHandle && <div>
                         <input className="inputHighlight" name="nameValue" placeholder="Name" ref={register({ required: true })} />
-                        {errors.nameValue && <span style={{ color: 'red' }}>Enter the correct name</span>}<br></br>
+                        {errors.nameValue && <span style={{ color: 'red' }}><br />Enter the correct name</span>}<br/>
 
                         <input className="inputHighlight" name="email" placeholder="Email" ref={register({ required: true, pattern: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/ })} />
-                        {errors.email && <span style={{ color: 'red' }}>enter the correct email</span>}   <br />
+                        {errors.email && <span style={{ color: 'red' }}><br/>enter the correct email</span>}   <br />
 
                         <input className="inputHighlight" name="password" placeholder="Password" ref={register({ required: true })} />
-                        {errors.password && <span style={{ color: 'red' }}> enter the correct Password</span>}<br />
+                        {errors.password && <span style={{ color: 'red' }}><br/> enter the correct Password</span>}<br />
 
                         <input className="inputHighlight" name="confirmPassword" placeholder="confirm Password" ref={register({ required: true })} />
-                        {errors.confirmPassword && <span style={{ color: 'red' }}> enter the correct Password</span>}<br />
+                        {errors.confirmPassword && <span style={{ color: 'red' }}><br/> enter the correct Password</span>}<br />
                         <input id="buttonHighlight" type="submit" />
                         <br></br>
                         <button id="account" onClick={() => setFormHandle(false)}>already has account</button>
@@ -97,10 +97,10 @@ const Login = () => {
                 {
                     !formHandle && <div>
                         <input className="inputHighlight" name="email" placeholder="Email" ref={register({ required: true, pattern: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/ })} />
-                        {errors.email && <span style={{ color: 'red' }}>enter the correct email</span>}   <br />
+                        {errors.email && <span style={{ color: 'red' }}><br/>enter the correct email</span>}   <br />
 
                         <input className="inputHighlight" name="password" placeholder="Password" ref={register({ required: true })} />
-                        {errors.password && <span style={{ color: 'red' }}> enter the correct Password</span>}<br />
+                        {errors.password && <span style={{ color: 'red' }}> <br/>enter the correct Password</span>}<br />
                         <input id="buttonHighlight" type="submit" /> <br></br>
                         <button id="account" onClick={() => setFormHandle(true)}> Create account?</button>
                     </div>

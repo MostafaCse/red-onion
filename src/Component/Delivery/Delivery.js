@@ -14,12 +14,12 @@ const Delivery = () => {
     return (
         <div className="row">
             <div style={{ textAlign: 'center', marginTop: '5%', paddingLeft: '10%' }} className="col-md-6 map-img">
-                <img src={mag}></img>
+                <img src={mag} alt=""></img>
             </div>
             <div style={{ textAlign: 'center', marginTop: '2%' }} className="col-md-6">
                 <div className="row">
                     <div className="col-md-6 rider">
-                        <img src={rider}></img>
+                        <img src={rider} alt=""></img>
                         <div style={{ backgroundColor: 'white', padding: '10px 10px' }}>
                             <FontAwesomeIcon style={{ color: 'red' }} icon={faDotCircle} size='xs'></FontAwesomeIcon>
                             <span className="infoHighlight">Your Location</span>
@@ -33,10 +33,10 @@ const Delivery = () => {
 
                         <div className="hamim-highlight">
                             <div style={{ padding: '10px 10px' }} className="row ">
-                                <div style={{ textAlign: 'end' }} className="col-md-6 hamim">
-                                    <img src={hamim}></img>
+                                <div style={{ textAlign: 'end' }} className="col-md-6 col-sm-6 hamim">
+                                    <img src={hamim} alt=""></img>
                                 </div>
-                                <div style={{ textAlign: 'start' }} className="col-md-4">
+                                <div style={{ textAlign: 'start' }} className="col-md-4 col-sm-4">
                                     <span style={{ fontWeight: 'bold', fontSize: '20px' }}>Hamim</span><br />
                                     <span style={{ color: 'grey' }}>Your rider</span>
                                 </div>

@@ -12,7 +12,6 @@ const Details = () => {
 
     const [button, setButton] = useState(true);
     const onSubmit = data => {
-        //   console.log(data);
         setButton(false);
     }
     let history = useHistory();
@@ -57,19 +56,19 @@ const Details = () => {
                     <form onSubmit={handleSubmit(onSubmit)}>
 
                         <input className="inputHighlight" name="door" placeholder="Delivery to door" ref={register({ required: true })} />
-                        {errors.door && <span style={{ color: 'red' }}>Enter the Delivery door</span>}<br></br>
+                        {errors.door && <span style={{ color: 'red' }}><br/>Enter the Delivery door</span>}<br/>
 
                         <input className="inputHighlight" name="roadNo" placeholder="Road No" ref={register({ required: true })} />
-                        {errors.roadNo && <span style={{ color: 'red' }}>Enter the Road no</span>}   <br />
+                        {errors.roadNo && <span style={{ color: 'red' }}><br/>Enter the Road no</span>}   <br />
 
                         <input className="inputHighlight" name="flat" placeholder="Flat,suite or floor" ref={register({ required: true })} />
-                        {errors.flat && <span style={{ color: 'red' }}>Enter the flat</span>}<br />
+                        {errors.flat && <span style={{ color: 'red' }}><br/>Enter the flat</span>}<br />
 
                         <input className="inputHighlight" name="businessName" placeholder="Business Name" ref={register({ required: true })} />
-                        {errors.businessName && <span style={{ color: 'red' }}>enter the business name</span>}<br />
+                        {errors.businessName && <span style={{ color: 'red' }}><br/>enter the business name</span>}<br />
 
                         <input className="inputHighlight" name="instructor" placeholder="Add delivery instructor" ref={register({ required: true })} />
-                        {errors.instructor && <span style={{ color: 'red' }}>Add delivery instructor</span>}<br />
+                        {errors.instructor && <span style={{ color: 'red' }}><br/>Add delivery instructor</span>}<br />
                         {
                             button && <input id="buttonHighlight" value="Save & Continue" type="submit" />
                         }
@@ -84,7 +83,7 @@ const Details = () => {
                     <p>107 Rd No 8</p>
                     <div className="row itemHighlight">
                         <div className="col-md-3">
-                            <img src={itemInfo.photo}></img>
+                            <img src={itemInfo.photo} alt=""></img>
                         </div>
                         <div className="col-md-3">
                             <p style={{ fontWeight: '500' }}>{itemInfo.name}</p>

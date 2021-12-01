@@ -17,24 +17,24 @@ const Choose = () => {
            </div>
             <div className="row">
 
-                <div className="col-md-4">
-                    <img className="img-fluid" src={fastDelivery}></img>
+                <div className="col-md-4 col-sm-6">
+                    <img className="img-fluid" src={fastDelivery} alt=""></img>
                     <div style={{ marginTop: '30px' }}>
                         <FontAwesomeIcon style={{ color: 'red' }} icon={faBus}></FontAwesomeIcon>
                         <span className="lineHighlight">Fast Delivery</span>
                         <p style={{ marginTop: '30px' }}>Minim aute sit magna consequat. Lorem nostrud excepteur nulla elit ullamco reprehenderit quis incididunt eiusmod sint. Labore reprehenderit ullamco </p>
                     </div>
                 </div>
-                <div className="col-md-4">
-                    <img className="img-fluid" src={notification}></img>
+                <div className="col-md-4 col-sm-6">
+                    <img className="img-fluid" src={notification} alt=""></img>
                     <div style={{ marginTop: '30px' }}>
                         <FontAwesomeIcon style={{ color: 'red' }} icon={faBell}></FontAwesomeIcon>
                         <span className="lineHighlight">A Good Auto Responder</span>
                         <p style={{ marginTop: '30px' }}>Minim aute sit magna consequat. Lorem nostrud excepteur nulla elit ullamco reprehenderit quis incididunt eiusmod sint. Labore reprehenderit ullamco </p>
                     </div>
                 </div>
-                <div className="col-md-4">
-                    <img className="img-fluid" src={homeDelivery}></img>
+                <div className="col-md-4 col-sm-6">
+                    <img className="img-fluid" src={homeDelivery} alt=""></img>
                     <div style={{ marginTop: '30px' }}>
                         <FontAwesomeIcon style={{ color: 'red' }} icon={faTruck}></FontAwesomeIcon>
                         <span className="lineHighlight">Home Delivery</span>

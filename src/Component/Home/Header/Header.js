@@ -12,8 +12,8 @@ import Choose from '../Choose/Choose';
 import './Header.css';
 
 const Header = () => {
-    const {logIn,itemInformation}=useContext(userContext);
-    const [itemInfo,setItemInfo]=itemInformation;
+    const {itemInformation}=useContext(userContext);
+    const [,setItemInfo]=itemInformation;
     const [item, setItem] = useState('Breakfast');
     const [itemDetail, setItemDetail] = useState(true);
     const [itemReview, setItemReview] = useState({});
@@ -82,23 +82,23 @@ const Header = () => {
             {
                 !itemDetail && <div >
                     <div className="row itemReview">
-                        <div className="col-md-6">
+                        <div className="col-md-6 col-sm-6 col-xs-6">
 
                             <h1 >{itemReview.name}</h1>
                             <p>Cupidatat ullamco occaecat pariatur aute ea proident aute ut commodo ex adipisicing culpa. Adipisicing sunt fugiat commodo qui ea est et aliquip enim. Qui in occaecat exercitation proident irure consequat commodo. commodo elit pariatur sint consequat aliqua anim pariatur in nisi minim laborum.</p>
                             <button onClick={addHandle} style={{ marginTop: '50px' }} className="button-highlight"><FontAwesomeIcon style={{ marginRight: '10px' }} icon={faCartPlus}></FontAwesomeIcon> Add</button>
                             <div className="row footerPhoto">
-                                <div className="col-md-3">
-                                    <img src={itemReview.photo}></img>
+                                <div className="col-md-3 col-sm-3 col-xs-3">
+                                    <img src={itemReview.photo} alt=""></img>
                                 </div>
-                                <div className="col-md-3">
-                                    <img src={itemReview.photo}></img>
+                                <div className="col-md-3 col-sm-3 col-xs-3">
+                                    <img src={itemReview.photo} alt=""></img>
                                 </div>
                             </div>
 
                         </div>
-                        <div className="col-md-6">
-                            <img src={itemReview.photo}></img>
+                        <div className="col-md-6 col-sm-6 col-xs-6">
+                            <img src={itemReview.photo} alt=""></img>
                         </div>
                     </div>
                 </div>
